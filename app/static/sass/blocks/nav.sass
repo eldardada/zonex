@@ -1,0 +1,26 @@
+.nav
+    &__list
+        display: flex
+        > li:not(:last-child)
+            margin-right: 42px
+    &__link
+        position: relative
+        font-size: 15px
+        &::after
+            content: ''
+            position: absolute
+            display: block
+            left: 0
+            bottom: -5px
+            width: 0
+            height: 2px
+            background-color: var(--color-dark)
+            transition: width 0.15s
+        &:hover
+            &::after
+                width: 100%
+        &--current
+            &::after
+                width: 100%
+
+

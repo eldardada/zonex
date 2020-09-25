@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Zonex</title>
 </head>
 <body>
     @@include("header.html")
-    <svg class="svg">
-        <use xlink:href="./static/img/svg/sprite.svg#SomeId"></use>
-    </svg>
+    <main class="main">
+        <section class="hero">
+            <div class="container hero__container">
+                <h1 class="visually-hidden ">Zonex - best shop!</h1>
+                <h2 class="hero__title">Fall-Winter Clearance Sales</h2>
+                <p class="hero__descr">All Sale Items are Final Sale / Free Shipping on All Orders</p>
+                <img class="hero__image" src="./static/img/girl.png" alt="Girl" aria-hidden="true">
+            </div>
+        </section>
+    </main>
     @@include("footer.html")
     <script src="static/js/script.js"></script>
 </body>

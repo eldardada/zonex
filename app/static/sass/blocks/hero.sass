@@ -1,0 +1,34 @@
+.hero
+    position: relative
+    height: 100vh
+    min-height: 700px
+    background-color: var(--quill-gray)
+    &::before
+        content: ''
+        position: absolute
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+        background-color: rgba(var(--color-black), 0.05)
+    &__container
+        position: relative
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: center
+        padding: 0 280px
+        height: 100%
+    &__title
+        margin: -50px 0 30px
+        max-width: 560px
+        font-size: 72px
+        font-weight: 700
+    &__descr
+        margin: 0
+        font-size: 18px
+    &__image
+        position: absolute
+        right: 230px
+        bottom: 0
+        max-height: 90%
