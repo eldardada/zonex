@@ -2,7 +2,7 @@
 
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
-if (document.querySelector('.swiper-container')) {
+if (document.querySelector('.swiper-wrapper')) {
   /**
   * Swiper 6.1.2
   * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -4575,5 +4575,63 @@ if (document.querySelector('.swiper-container')) {
       }
     }];
     return W.use(ue), W;
+  });
+}
+
+if (document.querySelector('.banner-slider')) {
+  var bannerSlider = new Swiper('.banner-slider', {
+    loop: true,
+    pagination: {
+      el: '.banner-pag',
+      type: 'bullets',
+      clickable: true
+    }
+  });
+}
+
+var marketing = document.querySelector('.marketing');
+
+if (marketing) {
+  var counter = 0;
+  var delay = 5000;
+  var data = [{
+    title: 'Title of product 1',
+    where: 'Moscow, Russia'
+  }, {
+    title: 'Title of product 2',
+    where: 'Kiev, Ukraine'
+  }, {
+    title: 'Title of product 3',
+    where: 'Rome, Italy'
+  }];
+
+  var closeMarketing = function closeMarketing() {
+    marketing.classList.remove('marketing--visible');
+  };
+
+  var changeMarketingData = function changeMarketingData() {
+    closeMarketing();
+    setTimeout(function () {
+      marketing.classList.add('marketing--visible');
+    }, delay - 2000);
+    var stringTitle = "".concat(data[counter].title);
+    var stringWhere = "15 minutes ago ".concat(data[counter].where);
+    marketing.querySelector('.marketing__title').textContent = stringTitle;
+    marketing.querySelector('.marketing__when-from').textContent = stringWhere;
+    counter++;
+
+    if (counter === data.length) {
+      counter = 0;
+    }
+  };
+
+  changeMarketingData();
+  setInterval(changeMarketingData, delay);
+  marketing.addEventListener('click', function (e) {
+    var target = e.target;
+
+    if (target.classList.contains('marketing__close')) {
+      closeMarketing();
+    }
   });
 }

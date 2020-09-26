@@ -1,0 +1,107 @@
+.footer
+    &__content
+        padding: 98px 250px 0
+    &__top
+        display: flex
+        justify-content: space-between
+        padding-bottom: 95px
+    &__col
+        &:nth-child(2)
+            margin-left: -60px
+    &__title
+        margin: 0 0 30px
+        font-size: 16px
+        font-weight: 700
+        text-transform: uppercase
+    &__link
+        font-size: 13px
+        color: var(--color-tundora)
+        &--row
+            font-weight: 700
+            font-size: 13px
+            color: var(--color-dark)
+    &__item
+        &:not(:last-child)
+            margin-bottom: 18px
+    &__list
+        &--row
+            display: flex
+            align-items: center
+            .footer__item
+                margin-bottom: 0
+                &:not(:last-child)
+                    margin-right: 43px
+                    
+    &__form
+        margin-bottom: 25px
+        width: 646px
+        transform: translateY(3px)
+    &__text
+        font-weight: 500
+        font-size: 13px
+        color: var(--color-tundora)
+    &__bottom
+        display: flex
+        align-items: center
+        justify-content: space-between
+        border-top: 1px solid #eee
+        padding: 40px 0
+    &__social
+        margin-right: 12px
+
+
+.subscribe-form
+    position: relative
+    &__title
+        margin: 0 0 38px
+        font-weight: 500
+        color: var(--color-tundora)
+        font-size: 13px
+    &__field
+        display: block
+        border-bottom: 1px solid var(--color-dark)
+        padding-bottom: 10px
+        input
+            border: none
+            padding-right: 80px
+            color: var(--color-dark)
+            font-size: 13px
+            width: 100%
+            &:focus
+                outline: none
+            &::placeholder
+                color: rgba(var(--color-tundora), 0.5)
+    &__btn
+        position: absolute
+        right: 0
+        bottom: 0
+        z-index: 2
+        font-weight: 500
+        font-size: 13px
+        color: var(--color-dark)
+
+.social
+    display: flex
+    align-items: center
+    &__item
+        &:not(:last-child)
+            margin-right: 29px
+    &__link
+        display: block
+        width: 16px
+        height: 16px
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        &-tw
+            background-image: url('./static/img/twitter.png')
+        &-fb
+            background-image: url('./static/img/facebook.png')
+        &-in
+            background-image: url('./static/img/instagram.png')
+        &-pin
+            background-image: url('./static/img/pinterest.png')
+        
+
+
+            

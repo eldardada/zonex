@@ -1,0 +1,39 @@
+.main-products
+    &__container
+        padding-top: 55px
+        padding-bottom: 55px
+    &__nav
+        display: flex
+        justify-content: center
+        margin-bottom: 20px
+    &__item
+        margin: 0 18px
+    &__btn
+        font-size: 24px
+    &__btn-center
+        text-align: center
+    &__more
+        display: inline-flex
+        flex-direction: column
+        align-items: center
+        margin-top: 95px
+        font-weight: 500
+        font-size: 13px
+        color: var(--color-gray)
+        span
+            display: inline-block
+            margin-bottom: 12px
+        svg
+            width: 12px
+            height: 21px
+            fill: #151515
+
+.products-grid
+    +row-flex
+    &__item
+        +col
+        +size(2.4)
+        margin-bottom: 80px
+        &:nth-last-child(-n+5)
+            margin-bottom: 0
+            

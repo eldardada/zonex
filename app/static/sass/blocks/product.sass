@@ -1,0 +1,22 @@
+.product
+    position: relative
+    &__image
+        margin-bottom: 20px
+        img
+            object-fit: cover
+            max-height: 100%
+    &__title
+        margin: 0 0 8px
+        font-size: 13px
+        color: var(--color-tundora)
+        a
+            &::before
+                content: ''
+                position: absolute
+                left: 0
+                right: 0
+                top: 0
+                bottom: 0
+    &__price
+        font-weight: 700
+        font-size: 13px

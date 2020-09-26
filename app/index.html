@@ -11,12 +11,75 @@
     <main class="main">
         <section class="hero">
             <div class="container hero__container">
-                <h1 class="visually-hidden ">Zonex - best shop!</h1>
-                <h2 class="hero__title">Fall-Winter Clearance Sales</h2>
-                <p class="hero__descr">All Sale Items are Final Sale / Free Shipping on All Orders</p>
-                <img class="hero__image" src="./static/img/girl.png" alt="Girl" aria-hidden="true">
+                <div class="banner-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="hero__content">
+                                <h1 class="visually-hidden ">Zonex - best shop!</h1>
+                                <h2 class="hero__title">Fall-Winter Clearance Sales</h2>
+                                <p class="hero__descr">All Sale Items are Final Sale / Free Shipping on All Orders</p>
+                                <img class="hero__image" src="./static/img/girl.png" alt="Girl" aria-hidden="true">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="hero__content">
+                                <h1 class="visually-hidden ">Zonex - best shop!</h1>
+                                <h2 class="hero__title">Fall-Winter Clearance Sales</h2>
+                                <p class="hero__descr">All Sale Items are Final Sale / Free Shipping on All Orders</p>
+                                <img class="hero__image" src="./static/img/girl.png" alt="Girl" aria-hidden="true">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="hero__content">
+                                <h1 class="visually-hidden ">Zonex - best shop!</h1>
+                                <h2 class="hero__title">Fall-Winter Clearance Sales</h2>
+                                <p class="hero__descr">All Sale Items are Final Sale / Free Shipping on All Orders</p>
+                                <img class="hero__image" src="./static/img/girl.png" alt="Girl" aria-hidden="true">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination banner-pag"></div>
+                </div>
+                <div class="marketing">
+                    <div class="marketing__image">
+                        <img src="./static/img/product-image.jpg" alt="product 1">
+                    </div>
+                    <div class="marketing__text">
+                        <span class="marketing__descr">Someone purchaed a</span>
+                        <h3 class="marketing__title">Faux shearling double-breasted coat</h3>
+                        <span class="marketing__when-from">15 minutes ago London, Great Britain</span>
+                    </div>
+                    <button class="marketing__close" aria-label="Close marketing block"></button>
+                </div>
             </div>
         </section>
+        <section class="banners">
+            <h2 class="visually-hidden">Banners</h2>
+            <div class="container banners__container">
+                <ul class="banners__list">
+                    <li class="banners__item ">
+                        <article class="banners__article banners-article banners-article--midseason">
+                            <h3 class="banners-article__title">Women's Mid-Season</h3>
+                            <a href="" class="banners-article__link main-link">Shop Now</a>
+                        </article>
+                    </li>
+                    <li class="banners__item">
+                        <article class="banners__article banners-article banners-article--summer">
+                            <h3 class="banners-article__title">Summer Romance</h3>
+                            <a href="" class="banners-article__link main-link">Shop Now</a>
+                        </article>
+                    </li>
+                    <li class="banners__item">
+                        <article class="banners__article banners-article banners-article--accs">
+                            <h3 class="banners-article__title">20% Off All Accessories</h3>
+                            <a href="" class="banners-article__link main-link">Shop Now</a>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        @@include("main-products.html")
+        @@include("shop-banners.html")
     </main>
     @@include("footer.html")
     <script src="static/js/script.js"></script>
